@@ -138,7 +138,7 @@ def equalization_filter(self, image_matrix):
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_equalization_filter.png?raw=true)
 
 ### Histograma Original
-![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_equalization_histogram.png?raw=true)
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_histograma.png?raw=true)
 
 ### Histograma com Filtro de Equalização
-![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_histograma.png?raw=true)
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_equalization_histogram.png?raw=true)
