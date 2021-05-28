@@ -74,11 +74,20 @@ def change_bright(self, image_matrix, change_value):
 ### Imagem Original
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird.png?raw=true)
 
+### Histograma Imagem Original
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_histograma.png?raw=true)
+
 ### Imagem aumentando o brilho em 50
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_bright_change_more_50.png?raw=true)
 
+### Histograma da Imagem aumentando o brilho em 50
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_bright_change_more_50_histogram.png?raw=true)
+
 ### Imagem escurecendo em 50
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_bright_change_less_50.png?raw=true)
+
+### Histograma da Imagem escurecendo em 50
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_bright_change_less_50_histogram.png?raw=true)
 
 3 - Continuar a implementação do programa iniciado no exercício anterior, incluindo
 um desses filtros (você escolhe):
@@ -134,11 +143,12 @@ def equalization_filter(self, image_matrix):
 ### Imagem Original
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird.png?raw=true)
 
+### Histograma da Imagem Original
+![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_histograma.png?raw=true)
+
 ### Imagem com Filtro de Equalização
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_equalization_filter.png?raw=true)
 
-### Histograma Original
-![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_histograma.png?raw=true)
-
-### Histograma com Filtro de Equalização
+### Histograma da Imagem com Filtro de Equalização
 ![picture](https://github.com/renatobanzai/sin5014_ex02/blob/master/bird_equalization_histogram.png?raw=true)
+

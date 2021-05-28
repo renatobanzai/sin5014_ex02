@@ -64,7 +64,7 @@ class Image:
                         image_matrix[line, column] = 255
                     else:
                         image_matrix[line, column] += change_value
-
+        self.show_histogram(image_matrix)
         cv2.imshow("imagem", image_matrix)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
@@ -126,8 +126,8 @@ if __name__ == '__main__':
     #img.show_histogram(img.image_matrix)
 
     # Running Exercise 2
-    #img.change_bright(img.image_matrix, -50)
+    img.change_bright(img.image_matrix, 50)
 
     # Running Exercise 3
-    img.equalization_filter(img.image_matrix)
+    #img.equalization_filter(img.image_matrix)
 
