@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import math
-
+import matplotlib.pyplot as plt
 
 def get_image_centroid(img):
     bg_color = 255
@@ -144,11 +144,11 @@ def zhang_suen_skeletization(img):
                     p2p4p6 = p2 * p4 * p6
                     p4p6p8 = p4 * p6 * p8
 
-                    if n_p1 <= 6 and n_p1 >= 2 and s_p1 == 1 and p2p4p6 == 0 and p4p6p8 == 0:
+                    if 2 <= n_p1 <= 6 and s_p1 == 1 and p2p4p6 == 0 and p4p6p8 == 0:
                         eliminate_list_1.append((line, column))
 
-            for point in eliminate_list_1:
-                img[point[0], point[1]] = 0
+        for point in eliminate_list_1:
+            img[point[0], point[1]] = 0
 
         #step 2
         eliminate_list_2 = []
@@ -177,22 +177,23 @@ def zhang_suen_skeletization(img):
                     p2p4p8 = p2 * p4 * p8
                     p2p6p8 = p2 * p6 * p8
 
-                    if n_p1 <= 6 and n_p1 >= 2 and s_p1 == 1 and p2p4p8 == 0 and p2p6p8 == 0:
+                    if 2 <= n_p1 <= 6 and s_p1 == 1 and p2p4p8 == 0 and p2p6p8 == 0:
                         eliminate_list_2.append((line, column))
 
-                for point in eliminate_list_2:
-                    img[point[0], point[1]] = 0
+        for point in eliminate_list_2:
+            img[point[0], point[1]] = 0
 
         if len(eliminate_list_1) > 0 or len(eliminate_list_2) > 0:
             need_more_steps = True
         else:
             need_more_steps = False
 
-
+    plt.imshow(img)
+    plt.show()
     return img
 
 
-img3a = cv2.imread("exerc3a.bmp", 0)
+img3a = cv2.imread("exerc3e.bmp", 0)
 zhang_suen_skeletization(img3a)
 
 
