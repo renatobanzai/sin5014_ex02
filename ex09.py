@@ -147,6 +147,7 @@ def zhang_suen_skeletization(img):
                     if 2 <= n_p1 <= 6 and s_p1 == 1 and p2p4p6 == 0 and p4p6p8 == 0:
                         eliminate_list_1.append((line, column))
 
+        # clean points from eliminate list 1
         for point in eliminate_list_1:
             img[point[0], point[1]] = 0
 
@@ -180,6 +181,7 @@ def zhang_suen_skeletization(img):
                     if 2 <= n_p1 <= 6 and s_p1 == 1 and p2p4p8 == 0 and p2p6p8 == 0:
                         eliminate_list_2.append((line, column))
 
+        # clean points from eliminate list 2
         for point in eliminate_list_2:
             img[point[0], point[1]] = 0
 
